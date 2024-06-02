@@ -1,6 +1,6 @@
 when defined(android):
   {.passL: "-lEGL".}
-  {.pragma: eglImport, cdecl, importc.}
+  {.pragma: eglImport, discardable, cdecl, importc.}
 else:
   {.error: "[EGL] Unsupported platform".}
 

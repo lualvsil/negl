@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Lucas Alves"
 description   = "Nim bindings for EGL"
 license       = "MIT"
