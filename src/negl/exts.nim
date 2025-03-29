@@ -138,7 +138,7 @@ const
   EGL_FOREVER_KHR* = 0xFFFFFFFFFFFFFFFF
   EGL_NO_SYNC_KHR* = cast[EGLSyncKHR](0)
 
-type AHardwareBuffer = object
+type AHardwareBuffer* = object
 
 proc eglGetCompositorTimingSupportedANDROID*(dpy: EGLDisplay, surface: EGLSurface, name: EGLint): EGLBoolean {.cdecl, importc.}
 proc eglGetCompositorTimingANDROID*(dpy: EGLDisplay, surface: EGLSurface, numTimestamps: EGLint, names: ptr EGLint, values: ptr EGLnsecsANDROID): EGLBoolean {.cdecl, importc.}

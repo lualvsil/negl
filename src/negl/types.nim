@@ -10,7 +10,7 @@ else:
     EGLNativeWindowType* = pointer
 
 type
-  EGLint* = int
+  EGLint* = int32
   EGLBoolean* = bool
   EGLenum* = uint
   EGLAttrib* = ptr int
